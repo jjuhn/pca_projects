@@ -1,0 +1,18 @@
+P.C.A Intro 1.1¶
+P.C.A is an unsupervised linear transformation technique for dimensionality reduction. It eliminates structural redundancies without sacrificing information if there are highly correlated variables. It can be used to:
+Explore data's structure
+Visualize high dimensional data
+Preprocess data for use in other algorithms
+Compress images
+
+The overall goal of PCA is to reduce the number of d dimensions (features) in a dataset by projecting it onto a k dimensional subspace where k < d. The approach used to complete PCA can be summarized as follows:
+
+Standardize the data.
+Use the standardized data to generate a covariance matrix (or perform Singular Vector Decomposition).
+Obtain eigenvectors (principal components) and eigenvalues from the covariance matrix. Each eigenvector will have a corresponding eigenvalue.
+Sort the eigenvalues in descending order.
+Select the k eigenvectors with the largest eigenvalues, where k is the number of dimensions used in the new feature space (k≤d).
+Construct a new matrix with the selected k eigenvectors.
+
+https://districtdatalabs.silvrback.com/principal-component-analysis-with-python
+
